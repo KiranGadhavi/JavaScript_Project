@@ -45,8 +45,32 @@
           </div>
         </div>
       </nav>    
-    <div>
-        <h1>Project4</h1>
-</div>    
-</body>
+    <div id="wrapper" class="text-center screen p-5">
+        <h2>Number guessing game</h2>
+        <p>try and guess a random number between 1 and 100.</p>
+   <p> You have 10 attempts to guess the right number.</p>
+  
+   <form>
+    <div class="col-12 p-2">
+    <label class="form-label" id="guess">Guess a number</label>
+    </div>
+    <div class=" col-3 mx-auto">
+    <input type="text" class="form-control guessField" id="guessField"></input> 
+    </div>
+    <div class="p-5 col-12">
+      <input type="submit" class="btn btn-warning guessSubmit" id="subt" value="submit guess"></input>   
+    </div>
+    
+  </form>
+
+  <div class="resultPass">
+    <p>Previous Guesses:<span  class="guesses"></span></p>
+    <p>Guesses Remaining:<span  class="lastResult"></span></p>
+  <p class="lowOrHi"></p>
+  </div>
+  
+  </div> 
+  <script src="Project_js_file/Guess_num.js"></script>   
+    
+  </body>
 </html>
